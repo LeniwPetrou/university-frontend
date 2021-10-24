@@ -15,9 +15,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 This project is about **adding** and **deleting students to a list**. 
 More specifically, the **basic features** are the following:
 
-## Creation of a nav-bar with corresponding routing
-  
-  ![](nav_bar.gif) 
+### Creation of a nav-bar with corresponding routing
+
+![](nav_bar.gif) 
 
 ### Creation of **3 components** which are related to every tab of the nav-bar
 
