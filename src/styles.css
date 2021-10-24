@@ -1,0 +1,117 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { 
+    height: 100%; 
+    width: 100%;
+    height: 100%;
+    background: url('https://wallpaperforu.com/wp-content/uploads/2021/05/Wallpaper-Minimal-Structure-Sky-Building-Architecture-W17-scaled.jpg') repeat center;
+    background-size: cover;
+    background-attachment: fixed, scroll;
+    background-repeat: repeat-y;
+}
+
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    min-height: 100%;
+    height: 100%;
+}
+
+.btn-primary{
+    color: pink;
+    background-color: darkcyan;
+    border-color: darkcyan;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+    display: inline-block;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.2);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary, 
+.button-x-style:hover, .button-x-style:focus, .button-x-style:active{
+    color: pink;
+    background-color: cadetblue !important;
+    border-color: cadetblue !important;
+    font-weight: bold !important;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+}
+
+.margin-1 {
+    margin-top: 1%; 
+}
+
+.margin-8 {
+    margin-top: 8%;
+}
+
+.margin-10 {
+    margin-top: 10% !important;
+}
+
+.center-button {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin-top: 2%;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.label-style-list{
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.3);
+    padding: 10px;
+    color: #003300;
+    background-color: pink;
+    display: inline-block;
+    background: pink;
+    background: linear-gradient(90deg, pink 0%, #11b47e50 65%, rgba(134, 192, 165, 0.705) 100%);
+    font-weight: bold !important;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-align: left !important;
+}
+
+.label-style{
+    box-shadow: 5px 0px 10px 0px rgba(0,0,0,.7);
+    padding: 10px;
+    color: #003300;
+    background-color: pink;
+    display: inline-block;
+    background: pink;
+    background: linear-gradient(90deg, pink 0%, #11b47e50 65%, rgba(134, 192, 165, 0.705) 100%);
+    font-weight: bold !important;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-align: left !important;
+    width: 260px;
+}
+
+.button-x-style{
+    box-shadow: 5px 0px 10px 0px rgba(0,0,0,.7);
+    padding: 10px;
+    background-color: darkcyan;
+    color: pink;
+    display: inline-block;
+    font-weight: bold !important;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-align: left !important;
+    font-weight: bold !important;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}

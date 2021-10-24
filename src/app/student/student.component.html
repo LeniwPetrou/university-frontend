@@ -1,0 +1,21 @@
+<div class="container margin-8">
+    <input type = "text" class="form-control" [(ngModel)] = "studentName" placeholder = "Student's name...">
+    <button class = "btn btn-primary center-button" (click) = "addStudent()"> 
+        Add Student
+    </button>
+    <label [hidden]="checkIfStudentListIsEmpty()" class = "label-style-list container margin-10"> 
+        List with Students
+    </label>
+    <div class="box container">
+        <div *ngFor = "let student of studentsList;let i=index">  
+            <button class = "btn margin-1 label-style" (click)="getStudentDetails(student)">  
+                {{ student.id }}: {{ student.name }}                                 
+            </button> 
+            <button class = "btn margin-1 button-x-style" (click) = "deleteStudent(student, i)"> 
+                X
+            </button> 
+        </div> 
+    </div>
+</div>
+  
+  

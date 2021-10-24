@@ -1,0 +1,18 @@
+
+<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="./" class="navbar-brand">UNIVERSITY</a>
+      </div>
+      <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav navbar-right">
+            <li role="presentation" routerLinkActive = "active" [routerLinkActiveOptions] = "{exact:true}"><a routerLink = "/"> Home </a> </li>
+            <li role="presentation" routerLinkActive = "active" ><a routerLink = "studentsList"> Students List </a> </li>
+            <li role="presentation" routerLinkActive = "active" ><a routerlink = "studentDetails/:id/:name"> Student Details </a> </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class = "row"> 
+    <router-outlet></router-outlet> 
+ </div>
