@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
 
+You can also check the read me file [here](https://leniwpetrou.github.io/universityProject-Angular/).
+
 ## Development server
 
 - Clone repository 
