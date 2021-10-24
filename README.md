@@ -21,23 +21,23 @@ More specifically, the **basic features** are the following:
 
 ### Creation of **3 components** which are related to every tab of the nav-bar
 
-  #### **Student Component:**
-    It refers to Home Page in which we can add a new student to a list and then display it. Furthermore,
-    in this page we can delete a specific student or even route to a student's details.
-    By adding and deleting a student, user is being informed by getting a notification which was created via 
-    bootstrap toaster.  
+#### Student Component:
+It refers to Home Page in which we can add a new student to a list and then display it. Furthermore,
+in this page we can delete a specific student or even route to a student's details.
+By adding and deleting a student, user is being informed by getting a notification which was created via 
+bootstrap toaster.  
     
-    ![](home.gif) 
+![](home.gif) 
     
-  #### **Students-List Component:**
-    It refers to Students List Page in which list is being displayed. Also, in this page we can 
-    can delete a specific student or even route to a student's details as we explained in the previous component.
+#### Students-List Component
+It refers to Students List Page in which list is being displayed. Also, in this page we can 
+can delete a specific student or even route to a student's details as we explained in the previous component.
     
-    ![](students_list.gif) 
+![](students_list.gif) 
      
-  #### **Students-Details Component:**
-    It refers to Student Details Page in which student's details are being displayed. 
+#### Students-Details Component:
+It refers to Student Details Page in which student's details are being displayed. 
     
-     ![](students_details.gif) 
+![](students_details.gif) 
     
 Features such us: getting students list, deleting a student and getting student's details was created into a service.
