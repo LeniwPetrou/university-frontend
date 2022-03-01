@@ -28,27 +28,18 @@ Sign up page in order to add a new user. Submit button is disabled at the beginn
 ### Nav-bar
 Nav bar changes related to connected user. Admin has more privileges and he can take control of more features in app.
 
-![](nav_bar.gif) 
+![](navbar.gif) 
 
 #### Other Users
 ##### Home 
 In this page users can edit their personal data 
 
 ##### Calendar 
-In this page users can see some events or courses which have been added by admin  
+In this page users can see some events or courses which have been added by admin 
+
+![](calendar.gif) 
 
 #### Admin
 ##### Students List
 Admin can add, edit or delete a user. If there is no selected user then a related message is shown. Also, admin can search for a certain user by filtering the data.
     
-![](home.gif) 
-    
-
-![](students_list.gif) 
-     
-#### Students-Details Component:
-It refers to **Student Details Page** in which *student's details are being displayed*. 
-    
-![](students_details.gif) 
-    
-Features such us: *getting students list, deleting a student and getting student's details was created into a service*.
