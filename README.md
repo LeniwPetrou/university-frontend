@@ -23,6 +23,8 @@ Log in page with complete authentication. If username and password are not fille
 ### Sign up
 Sign up page in order to add a new user. Submit button is disabled at the beginning because there are validations related to required fields. As soon as user fills all the required fields then the submit button is being enabled.
 
+![](signup.gif)
+
 ### Nav-bar
 Nav bar changes related to connected user. Admin has more privileges and he can take control of more features in app.
 
