@@ -5,8 +5,7 @@ import { RolesService } from 'src/app/services/roles.service';
 
 @Component({
   selector: 'app-add-role-dialog',
-  templateUrl: './add-role-dialog.component.html',
-  styleUrls: ['./add-role-dialog.component.css']
+  templateUrl: './add-role-dialog.component.html'
 })
 export class AddRoleDialogComponent implements OnInit {
 

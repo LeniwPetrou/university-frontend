@@ -19,6 +19,8 @@ import { SignUpDialogComponent } from '../dialog/sign-up-dialog/sign-up-dialog.c
 @Injectable()
 export class UsersListComponent implements OnInit {
 
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
   usersList: User[] = [];
   users: any;
   deletedUsersList: any[] = [];
@@ -26,9 +28,6 @@ export class UsersListComponent implements OnInit {
   selection = new SelectionModel<User>(true, []);
   data = Object.assign(this.usersList);
   dataSource = new MatTableDataSource<User>(this.usersList);
-  
-  @ViewChild(MatPaginator) paginator: MatPaginator;
-  @ViewChild(MatSort) sort: MatSort;
   
   constructor(
     private usersListService: UsersListService,

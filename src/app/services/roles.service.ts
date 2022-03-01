@@ -4,7 +4,6 @@ import { FormControl, FormGroup, Validators } from "@angular/forms";
 import { MatSnackBar } from "@angular/material/snack-bar";
 import { Router } from "@angular/router";
 import { environment } from "src/environments/environment";
-import { DeleteRoleDialogComponent } from "../dialog/delete-role-dialog/delete-role-dialog.component";
 import { rolesConsts } from "../roles/roles-date.const";
 
 @Injectable({
@@ -23,9 +22,8 @@ import { rolesConsts } from "../roles/roles-date.const";
   
     baseRoleUrl: string = `${environment.apiBaseUrl}${rolesConsts.urls.baseRole}`;
 
-  
     getRoles(){
-        return this.http.get(`${this.baseRoleUrl}/findAllRoles`)
+      return this.http.get(`${this.baseRoleUrl}/findAllRoles`)
     }
 
     addRole(role){
@@ -57,15 +55,15 @@ import { rolesConsts } from "../roles/roles-date.const";
       .subscribe(
         res => {
           this.snackBar.open('Role successfully deleted.' , 'Close',{
-                  duration: 2000
-                });
+            duration: 2000
+          });
           this.reloadCurrentRoute();
         },
         err => {
           this.snackBar.open('Error on delete role.' , 'Close',{
-                duration: 2000
-              });
-        })
+            duration: 2000
+          });
+      })
     }
 
     reloadCurrentRoute() {
@@ -73,6 +71,5 @@ import { rolesConsts } from "../roles/roles-date.const";
       this.router.navigateByUrl('/', {skipLocationChange: true}).then(() => {
           this.router.navigate([currentUrl]);
       });
-  }
-  
+    }
   }

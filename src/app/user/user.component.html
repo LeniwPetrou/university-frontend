@@ -1,21 +1,21 @@
 <mat-card style="text-align: center;"> 
   <mat-card-title style="margin:30px;">Personal Data</mat-card-title>
   <mat-card-content>
-    <form [formGroup]="userForm" (ngSubmit) = "updateUser()">
+    <form [formGroup]="connectedUserForm" (ngSubmit) = "updateUser()">
       <p>
-          <mat-form-field style="margin:5px;">
-            <input type="text" matInput placeholder="Firstname" value="firstname" formControlName="firstname">
-          </mat-form-field>
+        <mat-form-field style="margin:5px;">
+          <input type="text" matInput placeholder="Firstname" value="firstname" formControlName="firstname">
+        </mat-form-field>
       </p>
       <p>
-          <mat-form-field style="margin:5px;">
-            <input type="text" matInput placeholder="Lastname" formControlName="lastname">
-          </mat-form-field>
+        <mat-form-field style="margin:5px;">
+          <input type="text" matInput placeholder="Lastname" formControlName="lastname">
+        </mat-form-field>
       </p>
       <p>
-          <mat-form-field style="margin:5px;">
-            <input type="text" matInput placeholder="Email" formControlName="email">
-          </mat-form-field>
+        <mat-form-field style="margin:5px;">
+          <input type="text" matInput placeholder="Email" formControlName="email">
+        </mat-form-field>
       </p>
       <p>
         <mat-form-field style="margin:5px;">
@@ -28,16 +28,16 @@
         </mat-form-field>
       </p>
       <p>
-      <mat-form-field>
+        <mat-form-field>
           <mat-select formControlName="roleId" placeholder="Role">
             <mat-option (onSelectionChange)="change($event)" *ngFor="let role of rolesList" [value] = "role.id">
               {{ role.description }}
             </mat-option>
           </mat-select>
         </mat-form-field>
-    </p>
+      </p>
       <div class="button">
-        <button  mat-raised-button color="primary" type="submit" [disabled]="!userForm.valid && !userForm.dirty" >Submit</button>
+        <button  mat-raised-button color="primary" type="submit" [disabled]="!connectedUserForm.valid && !connectedUserForm.dirty" >Submit</button>
       </div>
     </form>
   </mat-card-content>

@@ -3,9 +3,9 @@
     <mat-card-content>
       <form [formGroup]="roleForm">
         <p>
-            <mat-form-field >
-              <input type="text" matInput placeholder="Description*" formControlName="description">
-            </mat-form-field>
+          <mat-form-field >
+            <input type="text" matInput placeholder="Description*" formControlName="description">
+          </mat-form-field>
         </p>
         <div class="button">
           <button mat-raised-button [mat-dialog-close]="false" (click)="closeDialog()" style="margin:10px;">Close</button>

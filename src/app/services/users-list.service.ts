@@ -35,11 +35,10 @@ export class UsersListService {
       password: new FormControl('', Validators.required),
       roleId: new FormControl('', Validators.required)
     });
-
     return this.userForm ;
   }
 
-  initializeUserFormLa(user) {
+  initializeUserFormWithValues(user) {
     this.userForm = new FormGroup({
       id: new FormControl(user.id === null ? '' : user.id),
       firstname: new FormControl( user.firstname === null ? '' : user.firstname, Validators.required),
@@ -51,35 +50,6 @@ export class UsersListService {
     });
     return this.userForm ;
   }
-
-//  initializeMatTable():any {
-//     this.http.get(`${this.baseUserUrl}/findAllUsers`).pipe()
-//       .subscribe(result => {
-//         console.log(result);
-//         this.users = result;
-//         this.dataSource = new MatTableDataSource<User>(this.users);
-//         this.dataSource.paginator = this.paginator;
-//         this.dataSource.sort = this.sort;
-//         return this.dataSource;
-//       });
-//     }
-
-  // initializeUserForm(user?) { 
-  //   this.userForm = this.formBuilder.group({
-  //     id:  [user.id === null ? '' : user.id],
-  //     firstname:  [user.firstname === null ? '' : user.firstname, Validators.required],
-  //     lastname:  [user.lastname === null ? '' : user.lastname , Validators.required],
-  //     email: [user.email === null ? '' : user.email , [Validators.required, Validators.email]],
-  //     username: [user.username === null ? '' : user.username, Validators.required],
-  //     password: [user.password === null ? '' : user.password, Validators.required],
-  //     roleId: [user.roleId === null ? '' : user.roleId, Validators.required]
-  //   });
-  //   return this.userForm;
-  // }
-
-  // getUsers() {
-  //   return this.http.get(`${this.baseUserUrl}/findAllUsers`) 
-  // }
 
   getUsers() {
     return this.http.get(`${this.baseUserUrl}/findAllUsers`)
@@ -106,16 +76,16 @@ export class UsersListService {
     .subscribe(
       res => {
         this.snackBar.open('User successfully deleted.' , 'Close',{
-                duration: 2000
-              });
+          duration: 2000
+        });
         this.reloadCurrentRoute();
       },
       err => {
         this.snackBar.open('Error on delete user.' , 'Close',{
-              duration: 2000
-            });
+          duration: 2000
+        });
       })
-  }
+    }
 
   updateUser(user){
     return this.http.put(`${this.baseUserUrl}/updateUser`,user).subscribe(
@@ -123,6 +93,7 @@ export class UsersListService {
       this.snackBar.open('User successfully updated.' , 'Close',{
         duration: 2000
       });
+      this.reloadCurrentRoute();
     },
     err => {
       this.snackBar.open('User failed to be updated.' , 'Close',{
@@ -166,11 +137,10 @@ export class UsersListService {
     )
   }
 
-
   reloadCurrentRoute() {
     let currentUrl = this.router.url;
     this.router.navigateByUrl('/', {skipLocationChange: true}).then(() => {
         this.router.navigate([currentUrl]);
     });
-}
+  }
 }

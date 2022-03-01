@@ -1,26 +1,25 @@
+<app-sign-in-form *ngIf="!loginService.userIsAuthenticated"></app-sign-in-form>
 <div *ngIf="loginService.userIsAuthenticated">
-<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+  <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
     <div class="container">
       <div class="navbar-header">
         <a href="/" class="navbar-brand">UNIVERSITY</a>
       </div>
       <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
         <ul class="nav navbar-nav navbar-right">
-            <li role="presentation" routerLinkActive = "active" [routerLinkActiveOptions]="{exact: false}"><a routerLink = "home"> Home </a> </li>
-            <li role="presentation" routerLinkActive = "active" *ngIf="loginService.isAdmin"><a routerLink = "usersList"> Students List </a> </li>
-            <li role="presentation" routerLinkActive = "active" ><a routerLink = "calendar"> Calendar </a> </li>
-            <li role="presentation" routerLinkActive = "active" *ngIf="loginService.isAdmin"><a routerLink = "roles"> Roles </a> </li>
-            <li role="presentation" routerLinkActive = "active" *ngIf="loginService.isAdmin"><a routerLink = "courses"> Courses </a> </li>
-            <li role="presentation" routerLinkActive = "active" ><a href="/">Log Out </a> </li>
+          <li role="presentation" routerLinkActive = "active" [routerLinkActiveOptions]="{exact: false}"><a routerLink = "home"> Home </a> </li>
+          <li role="presentation" routerLinkActive = "active" *ngIf="loginService.isAdmin"><a routerLink = "usersList"> Students List </a> </li>
+          <li role="presentation" routerLinkActive = "active" ><a routerLink = "calendar"> Calendar </a> </li>
+          <li role="presentation" routerLinkActive = "active" *ngIf="loginService.isAdmin"><a routerLink = "roles"> Roles </a> </li>
+          <li role="presentation" routerLinkActive = "active" *ngIf="loginService.isAdmin"><a routerLink = "courses"> Courses </a> </li>
+          <li role="presentation" routerLinkActive = "active" ><a href="/">Log Out </a> </li>
         </ul>
       </nav>
     </div>
   </header>
   <div class = "row"> 
     <router-outlet></router-outlet> 
- </div>
+  </div>
 </div>
-
- <app-sign-in-form *ngIf="!loginService.userIsAuthenticated"></app-sign-in-form>
 
  

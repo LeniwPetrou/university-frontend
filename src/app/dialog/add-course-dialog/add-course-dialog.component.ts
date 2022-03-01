@@ -8,8 +8,7 @@ import { SignUpDialogComponent } from '../sign-up-dialog/sign-up-dialog.componen
 
 @Component({
   selector: 'app-add-course-dialog',
-  templateUrl: './add-course-dialog.component.html',
-  styleUrls: ['./add-course-dialog.component.css']
+  templateUrl: './add-course-dialog.component.html'
 })
 export class AddCourseDialogComponent implements OnInit {
 

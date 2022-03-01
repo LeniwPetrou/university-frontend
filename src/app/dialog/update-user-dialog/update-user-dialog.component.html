@@ -1,37 +1,14 @@
-<!-- <div class="basic-container">
-    <mat-form-field>
-      <input matInput placeholder="Firstname" [(ngModel)]="data.firstname">
-    </mat-form-field>
-    
-    <mat-form-field>
-      <input matInput placeholder="Lastname" [(ngModel)]="data.lastname">
-    </mat-form-field>
-  
-    <mat-form-field>
-      <input matInput placeholder="Email" [(ngModel)]="data.email">
-    </mat-form-field>
-    
-    <div mat-dialog-actions [align]="'end'">
-      <button mat-raised-button [mat-dialog-close]="false" (click)="closeDialog()">Close</button>
-      <button mat-raised-button color="primary" [mat-dialog-close]="true" (click)="updateStudent()">Save</button>
-  </div>
-    </div> -->
-
 <h1 mat-dialog-title>Update User</h1>
 <mat-form-field>
-    <input matInput placeholder="Firstname" [(ngModel)]="data.firstname">
-  </mat-form-field>
-  
-  <mat-form-field>
-    <input matInput placeholder="Lastname" [(ngModel)]="data.lastname">
-  </mat-form-field>
-
-  <mat-form-field>
-    <input matInput placeholder="Email" [(ngModel)]="data.email">
-  </mat-form-field>
-<div mat-dialog-actions>
-   
-        <button mat-raised-button [mat-dialog-close]="false" (click)="closeDialog()">Close</button>
-        <button mat-raised-button color="primary" [mat-dialog-close]="true" (click)="updateUser()">Save</button>
-
+  <input matInput placeholder="Firstname" [(ngModel)]="data.firstname">
+</mat-form-field>
+<mat-form-field>
+  <input matInput placeholder="Lastname" [(ngModel)]="data.lastname">
+</mat-form-field>
+<mat-form-field>
+  <input matInput placeholder="Email" [(ngModel)]="data.email">
+</mat-form-field>
+<div mat-dialog-actions> 
+  <button mat-raised-button [mat-dialog-close]="false" (click)="closeDialog()">Close</button>
+  <button mat-raised-button color="primary" [mat-dialog-close]="true" (click)="updateUser()">Save</button>
 </div>

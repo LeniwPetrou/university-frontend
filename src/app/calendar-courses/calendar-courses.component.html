@@ -1,9 +1,8 @@
 <div style="margin-top:5%;">
-<mwl-demo-utils-calendar-header   [(view)]="view" [(viewDate)]="viewDate">
-</mwl-demo-utils-calendar-header>
+  <mwl-demo-utils-calendar-header [(view)]="view" [(viewDate)]="viewDate"> </mwl-demo-utils-calendar-header>
 </div>
 
- <div  style="margin:2%;" [ngSwitch]="view">
+ <div style="margin:2%;" [ngSwitch]="view">
   <mwl-calendar-month-view
     *ngSwitchCase="'month'"
     [viewDate]="viewDate"

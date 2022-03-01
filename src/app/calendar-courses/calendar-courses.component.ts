@@ -1,12 +1,11 @@
 import { Component, OnInit} from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { CalendarEvent, CalendarMonthViewDay, CalendarView} from 'angular-calendar';
+import { CalendarEvent, CalendarView} from 'angular-calendar';
 import { Subject } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { coursesConsts } from '../courses/courses-data.const';
 import { CourseDialogComponent } from '../dialog/course-dialog/course-dialog.component';
 import { CoursesService } from '../services/courses.service';
-
 
 @Component({
   selector: 'app-calendar-courses',
@@ -27,7 +26,7 @@ export class CalendarCoursesComponent implements OnInit {
     public dialog: MatDialog) {  }
 
   ngOnInit(): void {
-     this.initializeCalender();
+    this.initializeCalender();
   }
 
   initializeCalender(){
@@ -43,7 +42,6 @@ export class CalendarCoursesComponent implements OnInit {
 
   switchView (viewType){
     this.view = viewType;
-
   }
 
   handleEvent(action: string, event: CalendarEvent): void {

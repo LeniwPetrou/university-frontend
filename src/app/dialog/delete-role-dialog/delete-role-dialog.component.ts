@@ -4,8 +4,7 @@ import { RolesService } from 'src/app/services/roles.service';
 
 @Component({
   selector: 'app-delete-role-dialog',
-  templateUrl: './delete-role-dialog.component.html',
-  styleUrls: ['./delete-role-dialog.component.css']
+  templateUrl: './delete-role-dialog.component.html'
 })
 export class DeleteRoleDialogComponent implements OnInit {
 

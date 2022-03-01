@@ -10,10 +10,6 @@ import { DeleteRoleDialogComponent } from '../dialog/delete-role-dialog/delete-r
 import { RolesService } from '../services/roles.service';
 import { Roles } from './roles';
 
-
-/**
- * @title Table with selection
- */
 @Component({
   selector: 'app-roles',
   templateUrl: './roles.component.html',
@@ -32,15 +28,14 @@ export class RolesComponent implements OnInit{
     private rolesService: RolesService,
     public dialog: MatDialog,
     private snackBar: MatSnackBar) { }
-    
-  
+
   ngOnInit(): void {  
     this.rolesService.getRoles().pipe().subscribe((roles: any)=>{
       this.rolesList = roles;
       this.dataSource = new MatTableDataSource<Roles>(this.rolesList);
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;
-     });
+    });
   }
 
   /** Whether the number of selected elements matches the total number of rows. */
@@ -53,8 +48,8 @@ export class RolesComponent implements OnInit{
   /** Selects all rows if they are not all selected; otherwise clear selection. */
   masterToggle() {
     this.isAllSelected() ?
-        this.selection.clear() :
-        this.dataSource.data.forEach(row => this.selection.select(row));
+    this.selection.clear() :
+    this.dataSource.data.forEach(row => this.selection.select(row));
   }
 
   applyFilter(filterValue: string) {

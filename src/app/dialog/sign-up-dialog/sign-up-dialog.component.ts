@@ -5,7 +5,6 @@ import { Roles } from 'src/app/roles/roles';
 import { RolesService } from 'src/app/services/roles.service';
 import { UsersListService } from 'src/app/services/users-list.service';
 
-
 @Component({
   selector: 'app-sign-up-dialog',
   templateUrl: './sign-up-dialog.component.html'

@@ -14,17 +14,16 @@ export class UpdateUserDialogComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public data: any
   ) { }
 
-
   ngOnInit() {
   }
 
   closeDialog() {
     this.dialogRef.close();
+    this.usersListService.reloadCurrentRoute();
   }
 
   updateUser(){
     this.dialogRef.close();
     this.usersListService.updateUser(this.data);
   }
-
 }
