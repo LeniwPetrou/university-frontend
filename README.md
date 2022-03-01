@@ -28,7 +28,7 @@ Sign up page in order to add a new user. Submit button is disabled at the beginn
 ### Nav-bar
 Nav bar changes related to connected user. Admin has more privileges and he can take control of more features in app.
 
-![](navbar.gif) 
+![](home.png) 
 
 #### Other Users
 ##### Home 
@@ -37,7 +37,7 @@ In this page users can edit their personal data
 ##### Calendar 
 In this page users can see some events or courses which have been added by admin 
 
-![](calendar.gif) 
+![](calendar.png) 
 
 #### Admin
 ##### Students List
