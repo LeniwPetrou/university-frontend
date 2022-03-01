@@ -18,11 +18,11 @@ More specifically, the **basic features** are the following:
 ### Sign in 
 Sign in page with complete authentication. If username and password are not filled or authentication has failed, user is being informed by related messages (snackbars).  
 
-#### Sign up
+### Sign up
 Sign up page in order to add a new user. Submit button is disabled at the beginning because there are validations related to required fields. As soon as user fills all the required fields then the submit button is being enabled.
 
-### Nav-bar relates to connected user
-Nav bar changes related to connected user. Admin has more privileges and can take control of more features in app.
+### Nav-bar
+Nav bar changes related to connected user. Admin has more privileges and he can take control of more features in app.
 
 ![](nav_bar.gif) 
 
@@ -33,11 +33,9 @@ In this page users can edit their personal data
 ##### Calendar 
 In this page users can see some events or courses which have been added by admin  
 
-#### Admin:
-It refers to **Home Page** in which we can *add a new student to a list and then display it*. Furthermore,
-in this page we can *delete a specific student or even route to a student's details*.
-By adding and deleting a student, user is being informed by getting a *notification* which was created via 
-bootstrap toaster.  
+#### Admin
+##### Students List
+Admin can add, edit or delete a user. If there is no selected user then a related message is shown. Also, admin can search for a certain user by filtering the data.
     
 ![](home.gif) 
     
