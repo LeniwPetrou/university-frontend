@@ -15,8 +15,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 This project is frontent part of an app related to a university. 
 More specifically, the **basic features** are the following:
 
-### Sign in 
-Sign in page with complete authentication. If username and password are not filled or authentication has failed, user is being informed by related messages (snackbars).  
+### Log in 
+Log in page with complete authentication. If username and password are not filled or authentication has failed, user is being informed by related messages (snackbars).
+
+![](login.gif) 
 
 ### Sign up
 Sign up page in order to add a new user. Submit button is disabled at the beginning because there are validations related to required fields. As soon as user fills all the required fields then the submit button is being enabled.
