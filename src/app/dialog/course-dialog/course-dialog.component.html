@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Course Info</h1>
+<mat-form-field>
+    <input matInput placeholder="Title" [(ngModel)]="data.title" [disabled]="true">
+  </mat-form-field>
+  
+  <mat-form-field>
+    <input matInput placeholder="Start" [(ngModel)]="data.start" [disabled]="true">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="End" [(ngModel)]="data.end" [disabled]="true">
+  </mat-form-field>
+<div mat-dialog-actions>
+    <button mat-raised-button [mat-dialog-close]="false" (click)="closeDialog()">Close</button>
+</div>

@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-card-title style="margin-bottom:20px;">New Role</mat-card-title>
+    <mat-card-content>
+      <form [formGroup]="roleForm">
+        <p>
+            <mat-form-field >
+              <input type="text" matInput placeholder="Description*" formControlName="description">
+            </mat-form-field>
+        </p>
+        <div class="button">
+          <button mat-raised-button [mat-dialog-close]="false" (click)="closeDialog()" style="margin:10px;">Close</button>
+          <button mat-raised-button color="primary" [mat-dialog-close]="true" (click)="addRole()" style="margin:10px;" [disabled]="!roleForm.valid">Save</button>
+        </div>
+      </form>
+    </mat-card-content>
+</mat-card>

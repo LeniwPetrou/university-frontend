@@ -1,0 +1,30 @@
+<div style="margin-top:5%;">
+<mwl-demo-utils-calendar-header   [(view)]="view" [(viewDate)]="viewDate">
+</mwl-demo-utils-calendar-header>
+</div>
+
+ <div  style="margin:2%;" [ngSwitch]="view">
+  <mwl-calendar-month-view
+    *ngSwitchCase="'month'"
+    [viewDate]="viewDate"
+    [events]="events"
+    [refresh]="refresh"
+    (eventClicked)="handleEvent('Clicked', $event.event)"
+    (dayClicked)="clickedDate = $event.day.date">
+  </mwl-calendar-month-view>
+  <mwl-calendar-week-view
+    *ngSwitchCase="'week'"
+    [viewDate]="viewDate"
+    [events]="events"
+    [refresh]="refresh">
+  </mwl-calendar-week-view>
+  <mwl-calendar-day-view
+    *ngSwitchCase="'day'"
+    [viewDate]="viewDate"
+    [events]="events"
+    [refresh]="refresh">
+  </mwl-calendar-day-view>
+</div>
+
+ 
+

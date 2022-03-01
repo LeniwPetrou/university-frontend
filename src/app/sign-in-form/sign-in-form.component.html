@@ -1,0 +1,21 @@
+<mat-card  style="text-align: center;">
+  <mat-card-title style="margin: 30px;">Login</mat-card-title>
+  <mat-card-content style="margin: 30px;">
+    <form [formGroup]="userForm" >
+      <p>
+        <mat-form-field>
+          <input type="text" matInput placeholder="Username" formControlName="username">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field>
+          <input type="password" matInput placeholder="Password" formControlName="password">
+        </mat-form-field>
+      </p>
+      <div class="button">
+        <button mat-raised-button color="primary" (click) = "submit()" style="margin: 30px;">Login</button>
+        <button mat-raised-button color="accent"(click) = "signUp()" style="margin: 30px;">Sign up</button>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>
