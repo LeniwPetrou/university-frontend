@@ -9,6 +9,7 @@ import { UpdateUserDialogComponent } from '../dialog/update-user-dialog/update-u
 import { DeleteUserDialogComponent } from '../dialog/delete-user-dialog/delete-user-dialog.component';
 import { SelectionModel } from '@angular/cdk/collections';
 import { SignUpDialogComponent } from '../dialog/sign-up-dialog/sign-up-dialog.component';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-users-list',
@@ -31,7 +32,8 @@ export class UsersListComponent implements OnInit {
   
   constructor(
     private usersListService: UsersListService,
-    public dialog: MatDialog) { }
+    public dialog: MatDialog,
+    private snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
     this.usersListService.getUsers().pipe().subscribe((res):any => {
@@ -51,14 +53,21 @@ export class UsersListComponent implements OnInit {
   }
 
   deleteUser() {
-    this.selection.selected.forEach(item => {
-      this.deletedUsersList.push(item);
-    });
-    const dialog = this.dialog.open(DeleteUserDialogComponent, {
-      width: '250px',
-      disableClose: true,
-      data: this.deletedUsersList
-    });
+    if (this.selection.selected.length !== 0){
+      this.selection.selected.forEach(item => {
+        this.deletedUsersList.push(item);
+      });
+      const dialog = this.dialog.open(DeleteUserDialogComponent, {
+        width: '250px',
+        disableClose: true,
+        data: this.deletedUsersList
+      });
+    }
+    else{
+      this.snackBar.open('Please select a user.' , 'Close',{
+        duration: 2000
+      });
+    }
   }
 
   addUser(){
