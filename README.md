@@ -29,23 +29,23 @@ More specifically, the **basic features** are the following:
 - Nav bar and menu **changes related to connected user**. Admin has more privileges and he can take control of more features in app.
 
 #### Other Users
-##### Home 
+##### Home Page
 - In this page users can **edit their personal data**. 
 
 ![](home.png) 
 
-##### Calendar 
+##### Calendar Page
 - In this page users can **see some events or courses** which have been added by admin. 
 
 ![](calendar.png) 
 
 #### Admin
-##### Home 
+##### Home Page
 - Admin has also the right to **edit his personal data**.
 
 ![](admin_home.png) 
 
-##### Students List
+##### Users Page
 - In this page, admin can **add, edit or delete a user**. If there is **no selected user then a related message is shown**. Also, **admin can search for a certain user by filtering the data**. The data are being displayed with **pagination**.
 
 ###### - Add
@@ -64,13 +64,13 @@ More specifically, the **basic features** are the following:
 
 ![](search.gif)
 
-##### Roles
+##### Roles Page
 
 - In this page, admin has the right to **add, delete and search for a role**. Also, features, such as search, pagination or no selected role message, that have been described in the previous page are applied in this one too.
 
 ![](pagination.gif)
 
-##### Courses
+##### Courses Page
 
 - In this page admin can add some events or courses that afterwards are being displayed on the calendar. When admin adds an event he can **pick not only a date but also an hour too**.  
 
