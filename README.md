@@ -12,7 +12,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 
-This project is frontent part of an app related to a university. 
+This project is frontend part of an app related to a university. 
 More specifically, the **basic features** are the following:
 
 ### Log in 
