@@ -16,37 +16,37 @@ This project is frontent part of an app related to a university.
 More specifically, the **basic features** are the following:
 
 ### Log in 
-Log in page with **complete authentication**. If username and password are not filled or authentication has failed, user is being informed by related messages (snackbars).
+- Log in page with **complete authentication**. If username and password are not filled or authentication has failed, user is being informed by related messages (snackbars).
 
 ![](login.gif) 
 
 ### Sign up
-Sign up page in order to add a new user. Submit button is disabled at the beginning because there are validations related to required fields. As soon as user fills all the required fields then the submit button is being enabled.
+- Sign up page in order to add a new user. Submit button is disabled at the beginning because there are validations related to required fields. As soon as user fills all the required fields then the submit button is being enabled.
 
 ![](signup.gif)
 
 ### Nav-bar
-Nav bar and menu **changes related to connected user**. Admin has more privileges and he can take control of more features in app.
+- Nav bar and menu **changes related to connected user**. Admin has more privileges and he can take control of more features in app.
 
 #### Other Users
 ##### Home 
-In this page users can **edit their personal data**. 
+- In this page users can **edit their personal data**. 
 
 ![](home.png) 
 
 ##### Calendar 
-In this page users can **see some events or courses** which have been added by admin. 
+- In this page users can **see some events or courses** which have been added by admin. 
 
 ![](calendar.png) 
 
 #### Admin
 ##### Home 
-Admin has also the right to **edit his personal data**.
+- Admin has also the right to **edit his personal data**.
 
 ![](admin_home.png) 
 
 ##### Students List
-In this page, admin can **add, edit or delete a user**. If there is **no selected user then a related message is shown**. Also, **admin can search for a certain user by filtering the data**. The data are being displayed with **pagination**.
+- In this page, admin can **add, edit or delete a user**. If there is **no selected user then a related message is shown**. Also, **admin can search for a certain user by filtering the data**. The data are being displayed with **pagination**.
 
 ###### - Add
 
@@ -66,19 +66,19 @@ In this page, admin can **add, edit or delete a user**. If there is **no selecte
 
 ##### Roles
 
-In this page, admin has the right to **add, delete and search for a role**. Also, features, such as search, pagination or no selected role message, that have been described in the previous page are applied in this one too.
+- In this page, admin has the right to **add, delete and search for a role**. Also, features, such as search, pagination or no selected role message, that have been described in the previous page are applied in this one too.
 
 ![](pagination.gif)
 
 ##### Courses
 
-In this page admin can add some events or courses that afterwards are being displayed on the calendar. When admin adds an event he can **pick not only a date but also an hour too**.  
+- In this page admin can add some events or courses that afterwards are being displayed on the calendar. When admin adds an event he can **pick not only a date but also an hour too**.  
 
 ![](course.gif)
 
 ### Log out
 
-Users can log out and the app redirects to the log in page.
+- Users can **log out and the app redirects to the log in page**.
 
 ![](logout.gif)
     
