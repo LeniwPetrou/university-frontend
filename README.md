@@ -12,32 +12,73 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 
-This project is about **adding** and **deleting students to a list**. 
+This project is frontent part of an app related to a university. 
 More specifically, the **basic features** are the following:
 
-### Creation of a nav-bar with corresponding routing
+### Log in 
+- Log in page with **complete authentication**. If username and password are not filled or authentication has failed, user is being informed by related messages (snackbars).
 
-![](nav_bar.gif) 
+![](login.gif) 
 
-### Creation of **3 components** which are related to every tab of the nav-bar
+### Sign up
+- Sign up page in order to add a new user. Submit button is disabled at the beginning because there are validations related to required fields. As soon as user fills all the required fields then the submit button is being enabled.
 
-#### Student Component:
-It refers to **Home Page** in which we can *add a new student to a list and then display it*. Furthermore,
-in this page we can *delete a specific student or even route to a student's details*.
-By adding and deleting a student, user is being informed by getting a *notification* which was created via 
-bootstrap toaster.  
+![](signup.gif)
+
+### Nav-bar
+- Nav bar and menu **changes related to connected user**. Admin has more privileges and he can take control of more features in app.
+
+#### Other Users
+##### Home Page
+- In this page users can **edit their personal data**. 
+
+![](home.png) 
+
+##### Calendar Page
+- In this page users can **see some events or courses** which have been added by admin. 
+
+![](calendar.png) 
+
+#### Admin
+##### Home Page
+- Admin has also the right to **edit his personal data**.
+
+![](admin_home.png) 
+
+##### Users Page
+- In this page, admin can **add, edit or delete a user**. If there is **no selected user then a related message is shown**. Also, **admin can search for a certain user by filtering the data**. The data are being displayed with **pagination**.
+
+###### - Add
+
+![](add.gif)
+
+###### - Delete
+
+![](delete.gif)
+
+###### - Edit
+
+![](edit.gif)
+
+###### - Search
+
+![](search.gif)
+
+##### Roles Page
+
+- In this page, admin has the right to **add, delete and search for a role**. Also, features, such as search, pagination or no selected role message, that have been described in the previous page are applied in this one too.
+
+![](pagination.gif)
+
+##### Courses Page
+
+- In this page admin can add some events or courses that afterwards are being displayed on the calendar. When admin adds an event he can **pick not only a date but also an hour too**.  
+
+![](course.gif)
+
+### Log out
+
+- Users can **log out and the app redirects to the log in page**.
+
+![](logout.gif)
     
-![](home.gif) 
-    
-#### Students-List Component
-It refers to **Students List Page** in which *list is being displayed*. Also, in this page we can 
-can *delete a specific student or even route to a student's details* as we explained in the previous component.
-    
-![](students_list.gif) 
-     
-#### Students-Details Component:
-It refers to **Student Details Page** in which *student's details are being displayed*. 
-    
-![](students_details.gif) 
-    
-Features such us: *getting students list, deleting a student and getting student's details was created into a service*.
