@@ -16,7 +16,7 @@ This project is frontent part of an app related to a university.
 More specifically, the **basic features** are the following:
 
 ### Log in 
-Log in page with complete authentication. If username and password are not filled or authentication has failed, user is being informed by related messages (snackbars).
+Log in page with **complete authentication**. If username and password are not filled or authentication has failed, user is being informed by related messages (snackbars).
 
 ![](login.gif) 
 
@@ -26,41 +26,41 @@ Sign up page in order to add a new user. Submit button is disabled at the beginn
 ![](signup.gif)
 
 ### Nav-bar
-Nav bar and menu changes related to connected user. Admin has more privileges and he can take control of more features in app.
+Nav bar and menu **changes related to connected user**. Admin has more privileges and he can take control of more features in app.
 
 #### Other Users
 ##### Home 
-In this page users can **edit their personal data** 
+In this page users can **edit their personal data**. 
 
 ![](home.png) 
 
 ##### Calendar 
-In this page users can **see some events or courses** which have been added by admin 
+In this page users can **see some events or courses** which have been added by admin. 
 
 ![](calendar.png) 
 
 #### Admin
 ##### Home 
-Admin has also the right to edit his personal data.
+Admin has also the right to **edit his personal data**.
 
 ![](admin_home.png) 
 
 ##### Students List
 In this page, admin can **add, edit or delete a user**. If there is **no selected user then a related message is shown**. Also, **admin can search for a certain user by filtering the data**. The data are being displayed with **pagination**.
 
-###### Add
+###### - Add
 
 ![](add.gif)
 
-###### Delete
+###### - Delete
 
 ![](delete.gif)
 
-###### Edit
+###### - Edit
 
 ![](edit.gif)
 
-###### Search
+###### - Search
 
 ![](search.gif)
 
