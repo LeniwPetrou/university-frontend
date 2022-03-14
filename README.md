@@ -12,8 +12,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 
-This project is frontend part of an app related to a university. You will find the backend part [here](https://github.com/LeniwPetrou/university-backend) 
-More specifically, the **basic features** are the following:
+This project is frontend part of an app related to a university. You will find the backend part [here](https://github.com/LeniwPetrou/university-backend). 
+More specifically, the **basic features** for this app are the following:
 
 ### Log in 
 - Log in page with **complete authentication**. If username and password are not filled or authentication has failed, user is being informed by related messages (snackbars).
